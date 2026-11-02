@@ -1,0 +1,15 @@
+CONFRONTO NETTO PENSIONE 2027 — VERSIONE STATICA
+
+I dati fiscali incorporati sono gli elenchi ufficiali del Dipartimento delle Finanze per l'anno 2026, acquisiti il 2 novembre 2026. Questa versione non contiene aggiornamenti automatici, workflow GitHub o script di aggiornamento.
+
+Per pubblicare su GitHub Pages senza aggiornamenti automatici: carica i file nella radice del repository e imposta Settings > Pages > Build and deployment > Source su Deploy from a branch, selezionando main e /(root). In alternativa, pubblica i file su un hosting statico.
+
+Per aggiornare i dati l'anno prossimo, sostituisci tax-data.js con un nuovo elenco ufficiale aggiornato e pubblica di nuovo i file. Controlla l'anno e la data mostrati nell'app.
+
+Se per un comune il dato 2026 non è disponibile o compare 0*, l'app non può calcolare automaticamente l'aliquota comunale: verifica la delibera ufficiale e inserisci l'aliquota in modalità manuale. Le addizionali sono applicate allo stesso modo ai due scenari del confronto. Il calcolo resta una simulazione e non riproduce il cedolino INPS.
+
+Fonti ufficiali:
+https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/download/tabella.htm
+https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/nuova_addcomirpef/download/tabella.htm
+
+AGGIORNAMENTO v3: per i comuni senza dato 2026 (valore 0*) l'app usa l'ultima aliquota pubblicata, quella del 2025 (elenco Dipartimento delle Finanze), e la segnala come provvisoria. Se anche questa manca, compare il campo per inserire a mano l'aliquota comunale; l'addizionale regionale resta automatica.
